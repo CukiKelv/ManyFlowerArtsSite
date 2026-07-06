@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos — Many Flower Arts</title>
+  <meta name="description" content="Catálogo de vasos artesanais. Coleções Dunas, Layers e Popcorn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body class="pagina-catalogo">
+
+  <header class="topo topo-claro">
+    <a class="marca" href="index.html">Many Flower <span>Arts</span></a>
+    <nav class="topo-nav" aria-label="Navegação principal">
+      <a href="index.html#colecoes">Coleções</a>
+      <a href="produtos.html" aria-current="page">Produtos</a>
+      <a href="index.html#contato" class="topo-cta">Encomendar</a>
+    </nav>
+  </header>
+
+  <main class="catalogo">
+    <div class="catalogo-cab">
+      <h1>Catálogo</h1>
+      <p>Toque em uma peça para ver fotos, detalhes e comprar pelo WhatsApp.</p>
+    </div>
+
+    <div class="filtros" id="filtros" role="tablist" aria-label="Filtrar por coleção">
+      <!-- pills geradas pelo js/catalogo.js -->
+    </div>
+
+    <div class="catalogo-grade" id="catalogo-grade">
+      <!-- cards gerados pelo js/catalogo.js -->
+    </div>
+
+    <p class="catalogo-vazio" id="catalogo-vazio" hidden>Nenhuma peça nesta coleção por enquanto.</p>
+  </main>
+
+  <!-- ================= MODAL DE PRODUTO ================= -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-fundo" id="modal-fundo"></div>
+    <div class="modal-caixa" role="dialog" aria-modal="true" aria-labelledby="modal-nome">
+      <button class="modal-fechar" id="modal-fechar" aria-label="Fechar">×</button>
+
+      <div class="modal-midia">
+        <div class="modal-visor" id="modal-visor">
+          <img id="modal-foto" src="" alt="">
+        </div>
+        <div class="modal-thumbs" id="modal-thumbs"></div>
+      </div>
+
+      <div class="modal-info">
+        <p class="modal-colecao" id="modal-colecao"></p>
+        <h2 id="modal-nome"></h2>
+        <p class="modal-id" id="modal-id"></p>
+        <p class="modal-preco" id="modal-preco"></p>
+        <p class="modal-descricao" id="modal-descricao"></p>
+
+        <div class="modal-acoes">
+          <a class="botao-wa" id="modal-comprar" href="#" target="_blank" rel="noopener">Comprar pelo WhatsApp</a>
+          <button class="botao-3d" id="modal-ver3d" hidden>Ver em 3D / AR</button>
+        </div>
+        <p class="modal-dica-ar" id="modal-dica-ar" hidden>
+          No celular, toque no ícone de AR dentro do visor 3D para ver o vaso no seu ambiente.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <p>Many Flower Arts · Brasília, DF</p>
+    <p class="rodape-mini">Peças artesanais — cada vaso é único.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/produtos.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

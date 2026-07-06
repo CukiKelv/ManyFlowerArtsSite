@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Many Flower Arts — Vasos artesanais</title>
+  <meta name="description" content="Vasos artesanais feitos à mão em Brasília. Coleções Dunas, Layers e Popcorn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="pagina-home">
+
+  <header class="topo" id="topo">
+    <a class="marca" href="index.html">Many Flower <span>Arts</span></a>
+    <nav class="topo-nav" aria-label="Navegação principal">
+      <a href="#colecoes">Coleções</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="#contato" class="topo-cta">Encomendar</a>
+    </nav>
+  </header>
+
+  <!-- ================= CENAS "TRANSFORME" ================= -->
+  <div class="cenas" id="cenas">
+
+    <div class="cenas-texto" aria-hidden="true">
+      <p class="cenas-eyebrow">Vasos feitos à mão</p>
+      <h1 class="cenas-titulo">Transforme</h1>
+      <p class="cenas-palavra" id="cenas-palavra">sua casa</p>
+      <div class="cenas-seta">↓</div>
+      <div class="cenas-rail">
+        <span class="rail-ponto ativo"></span>
+        <span class="rail-ponto"></span>
+        <span class="rail-ponto"></span>
+        <span class="rail-ponto"></span>
+      </div>
+    </div>
+
+    <section class="cena cena-casa"     data-palavra="sua casa"   aria-label="Transforme sua casa"></section>
+    <section class="cena cena-sinagoga" data-palavra="seu evento" aria-label="Transforme seu evento"></section>
+    <section class="cena cena-salao"    data-palavra="sua festa"  aria-label="Transforme sua festa"></section>
+    <section class="cena cena-jardim"   data-palavra="seu jardim" aria-label="Transforme seu jardim"></section>
+  </div>
+
+  <!-- ================= MANIFESTO ================= -->
+  <section class="manifesto">
+    <p>Cada vaso é uma peça única, moldada à mão.
+    Areia, camadas e gesso viram objetos que mudam o clima de um ambiente —
+    de uma prateleira em casa à mesa principal de uma festa.</p>
+  </section>
+
+  <!-- ================= COLEÇÕES ================= -->
+  <section class="colecoes" id="colecoes">
+    <div class="secao-cab">
+      <h2>Coleções</h2>
+      <a class="link-seta" href="produtos.html">Ver todos os produtos →</a>
+    </div>
+
+    <div class="colecoes-grade">
+      <a class="colecao-card colecao-dunas" href="produtos.html?colecao=Dunas" data-tilt>
+        <div class="colecao-texto">
+          <h3>Dunas</h3>
+          <p>Exterior de areia natural. Textura quente, tato de deserto.</p>
+        </div>
+      </a>
+      <a class="colecao-card colecao-layers" href="produtos.html?colecao=Layers" data-tilt>
+        <div class="colecao-texto">
+          <h3>Layers</h3>
+          <p>Camadas sobrepostas que revelam o processo, uma a uma.</p>
+        </div>
+      </a>
+      <a class="colecao-card colecao-popcorn" href="produtos.html?colecao=Popcorn" data-tilt>
+        <div class="colecao-texto">
+          <h3>Popcorn</h3>
+          <p>Gesso craquelado. Superfície viva, quase mineral.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= DESTAQUES ================= -->
+  <section class="destaques">
+    <div class="secao-cab">
+      <h2>Peças em destaque</h2>
+    </div>
+    <div class="destaques-grade" id="destaques-grade">
+      <!-- preenchido pelo js/site.js a partir de produtos.js -->
+    </div>
+  </section>
+
+  <!-- ================= CONTATO ================= -->
+  <section class="contato" id="contato">
+    <h2>Quer uma peça sob encomenda?</h2>
+    <p>Fale direto com a artista pelo WhatsApp.</p>
+    <a class="botao-wa" id="cta-whatsapp" href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </section>
+
+  <footer class="rodape">
+    <p>Many Flower Arts · Brasília, DF</p>
+    <p class="rodape-mini">Peças artesanais — cada vaso é único.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+  <script src="js/produtos.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
